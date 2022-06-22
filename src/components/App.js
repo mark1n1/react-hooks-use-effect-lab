@@ -11,7 +11,8 @@ function App() {
   function handleQuestionAnswered(correct) {
     if (currentQuestionId < questions.length) {
       setCurrentQuestion((currentQuestionId) => currentQuestionId + 1);
-    } else {
+    }
+    else {
       setCurrentQuestion(null);
     }
     if (correct) {
